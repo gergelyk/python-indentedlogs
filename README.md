@@ -23,7 +23,7 @@ pyenv local 3.8.2
 pip install indentedlogs
 ```
 
-## Demo
+## Examples
 
 ```sh
 python examples/demo0.py
