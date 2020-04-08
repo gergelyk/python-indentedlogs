@@ -26,7 +26,7 @@ extra:
     - type: envelope-o
       link: mailto:grzegorz.krason@gmail.com
 
-copyright: "Copyright &copy; Grzegorz Krasoń"
+copyright: "Copyright &copy; 2020 Grzegorz Krasoń"
 
 markdown_extensions:
   - abbr
