@@ -23,10 +23,12 @@ pyenv local 3.8.2
 pip install indentedlogs
 ```
 
-## Usage
+## Demo
 
 ```sh
-poetry run python indentedlogs/hello.py
+python examples/demo0.py
+python examples/demo1.py
+python examples/demo2.py
 ```
 
 ## Development
