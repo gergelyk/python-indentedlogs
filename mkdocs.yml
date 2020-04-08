@@ -1,0 +1,99 @@
+# Best reference regarding this config file is:
+# https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml
+
+site_name: "indentedlogs"
+site_url: "https://gergelyk.github.io/python-indentedlogs"
+
+theme:
+  name: "material"
+  feature:
+    tabs: false # Appear in the title bar
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+# Appears in the title bar
+repo_name: python-indentedlogs
+repo_url: https://github.com/gergelyk/python-indentedlogs
+#edit_uri: "tree/master/docs"
+
+extra:
+  # Appears in the footer bar
+  social:
+    - type: gitlab
+      link: https://github.com/gergelyk/python-indentedlogs
+    - type: envelope-o
+      link: mailto:grzegorz.krason@gmail.com
+
+copyright: "Copyright &copy; Grzegorz Krasoń"
+
+markdown_extensions:
+  - abbr
+  - footnotes
+  - codehilite:
+      guess_lang: false
+      linenums: false
+      noclasses: false
+  - def_list
+  - toc:
+      permalink: true
+  - meta
+  - mdx_include:
+      base_path: docs
+      recurs_remote: null
+  - sane_lists
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.escapeall
+  - pymdownx.extrarawhtml
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search
+#  - minify:
+#      minify_html: true # this doesn't work well with mermaid
+  - macros:
+      module_name: docs.macros
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          selection:
+            members:
+              [install]
+          rendering:
+            show_root_toc_entry: false
+            show_if_no_docstring: true
+      watch:
+        - indentedlogs
+  - markdownmermaid
+  - progress
+#  - htmlproofer # this only shows broken links in the build console
+
+extra_css:
+  - custom.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.core.min.js
+
+# Appears on the left side
+nav:
+  - Overview: index.md
+  - API: api.md
