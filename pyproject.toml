@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "indentedlogs"
-version = "0.1.1"
+version = "0.1.2"
 description = "Adds indentation to the log messages according to their location in the call stack."
 authors = ["Grzegorz Krasoń <grzegorz.krason@gmail.com>"]
 homepage = "https://gergelyk.github.io/python-indentedlogs"

@@ -64,6 +64,7 @@ poetry build
 
 # Releasing
 poetry version minor  # increment selected component
+git commit -am "bump version"
 git tag ${$(poetry version)[2]}
 git push --tags
 poetry build
