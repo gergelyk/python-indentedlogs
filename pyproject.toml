@@ -12,6 +12,7 @@ keywords = ["logging", "log", "tracing", "trace", "indented", "indent"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+vulture = "^1.4"
 
 [tool.poetry.dev-dependencies]
 mkdocs-material = "^4.6.0"

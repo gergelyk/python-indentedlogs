@@ -47,6 +47,7 @@ poetry run yapf -r -i indentedlogs tests
 poetry run flake8 indentedlogs tests
 
 # Checking composition and quality
+poetry run vulture indentedlogs tests
 poetry run mypy indentedlogs tests
 poetry run pylint indentedlogs tests
 poetry run bandit indentedlogs tests
