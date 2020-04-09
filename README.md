@@ -5,7 +5,7 @@ Adds indentation to the log messages according to their location in the call sta
 * Documentation: <https://gergelyk.github.io/python-indentedlogs>
 * Repository: <https://github.com/gergelyk/python-indentedlogs>
 * Package: <https://pypi.python.org/pypi/indentedlogs>
-* Author: [grzegorz.krason@gmail.com](mailto:grzegorz.krason@gmail.com)
+* Author: [Grzegorz Krasoń](mailto:grzegorz.krason@gmail.com)
 * License: [MIT](LICENSE)
 
 ## Requirements
